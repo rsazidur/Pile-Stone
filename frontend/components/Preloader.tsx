@@ -49,17 +49,17 @@ export default function Preloader() {
                                 transition={{ duration: 0.5, ease: "easeOut" }}
                                 className="overflow-hidden flex items-center justify-center"
                             >
-                                <div className="w-12 h-12 md:w-20 md:h-20 bg-navy text-yellow flex items-center justify-center font-black text-xl md:text-3xl tracking-tighter">
+                                <div className="w-16 h-16 md:w-24 md:h-24 bg-navy text-yellow flex items-center justify-center font-black text-2xl md:text-4xl tracking-tighter">
                                     PS
                                 </div>
                             </motion.div>
 
                             {/* Logo - Stacked like MAMAN CORP */}
                             <div className="text-center space-y-0 leading-none">
-                                <h1 className="text-4xl font-black tracking-tighter uppercase sm:text-6xl md:text-7xl text-navy">
+                                <h1 className="text-4xl font-black tracking-tighter uppercase sm:text-6xl md:text-6xl text-navy">
                                     PILE
                                 </h1>
-                                <h1 className="text-4xl font-black tracking-tighter uppercase sm:text-6xl md:text-7xl text-navy">
+                                <h1 className="text-4xl font-black tracking-tighter uppercase sm:text-6xl md:text-6xl text-navy">
                                     STONE
                                 </h1>
                             </div>
