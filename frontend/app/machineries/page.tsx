@@ -1,13 +1,10 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { machineries } from "@/content/machineries";
 
 export default function MachineriesPage() {
     return (
         <main className="bg-navy min-h-screen text-white font-sans selection:bg-yellow selection:text-navy">
-            <Navbar />
 
             <section className="pt-32 pb-20 px-6 min-h-screen flex flex-col items-center">
                 {/* Header */}
@@ -64,8 +61,6 @@ export default function MachineriesPage() {
                     </table>
                 </div>
             </section>
-
-            <Footer />
         </main>
     );
 }

@@ -7,8 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/solutions", label: "Solutions" }, // Renamed from Services for 'Maman' feel
+    { href: "/team", label: "Team" },
+    { href: "/machineries", label: "Machineries" },
+    { href: "/services", label: "Solutions" },
     { href: "/projects", label: "Projects" },
+    { href: "/clients", label: "Clients" },
     { href: "/contact", label: "Contact" },
 ];
 

@@ -1,7 +1,5 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CurvedLine from "@/components/CurvedLine";
 import { motion } from "framer-motion";
 
@@ -35,7 +33,6 @@ export default function ServicesPage() {
 
     return (
         <main className="bg-navy min-h-screen text-white font-sans selection:bg-yellow selection:text-navy">
-            <Navbar />
 
             {/* Banner / Header */}
             <section className="relative pt-32 pb-20 px-6">
@@ -67,7 +64,7 @@ export default function ServicesPage() {
                         >
                             {/* Icon / Curve */}
                             <div className="shrink-0 w-16 md:w-24 pt-2">
-                                <CurvedLine className="w-full h-auto drop-shadow-[0_0_10px_rgba(250,204,21,0.3)] transition-transform duration-500 ease-out hover:scale-110" />
+                                <CurvedLine className="w-full h-auto text-yellow drop-shadow-[0_0_10px_rgba(250,204,21,0.3)] transition-transform duration-500 ease-out hover:scale-110" />
                             </div>
 
                             {/* Text Content */}
@@ -83,8 +80,6 @@ export default function ServicesPage() {
                     ))}
                 </div>
             </section>
-
-            <Footer />
         </main>
     );
 }

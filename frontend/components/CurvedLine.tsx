@@ -1,4 +1,4 @@
-export default function CurvedLine({ className = "" }: { className?: string }) {
+export default function CurvedLine({ className = "text-yellow" }: { className?: string }) {
     return (
         <svg
             viewBox="0 0 50 100"
@@ -8,7 +8,7 @@ export default function CurvedLine({ className = "" }: { className?: string }) {
         >
             <path
                 d="M48 2C15 2 2 35 2 70"
-                stroke="#FACC15"
+                stroke="currentColor"
                 strokeWidth="4"
                 strokeLinecap="round"
             />

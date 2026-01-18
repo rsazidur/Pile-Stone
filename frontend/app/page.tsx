@@ -103,8 +103,16 @@ export default function Home() {
       </Section>
 
       {/* 03: VISION (MANIFESTO) */}
-      <Section id={3} onVisible={setActiveSection} className="bg-white text-navy relative">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50 -z-0 skew-x-12 translate-x-32" />
+      <Section id={3} onVisible={setActiveSection} className="bg-white text-navy relative overflow-hidden">
+        {/* Abstract Background Decoration */}
+        <div className="absolute top-0 right-0 w-2/3 h-full opacity-10 pointer-events-none">
+          <img
+            src="/pictures/abstract_structure.png"
+            alt=""
+            className="w-full h-full object-cover object-left"
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-white"></div>
+        </div>
 
         <div className="max-w-5xl mx-auto px-6 text-center z-10">
           <span className="text-navy/50 font-bold tracking-[0.2em] uppercase text-sm mb-6 block">03 / The Manifesto</span>
@@ -190,9 +198,17 @@ export default function Home() {
           </div>
 
           {/* Image Preview */}
-          <div className="hidden md:block w-2/3 h-full bg-slate-900 relative overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h3 className="text-white/10 text-9xl font-black uppercase rotate-90 origin-center whitespace-nowrap">
+          <div className="hidden md:block w-2/3 h-full bg-slate-900 relative overflow-hidden group">
+            <div className="absolute inset-0 z-0">
+              <img
+                src="/pictures/contact_hero.png"
+                alt="Featured Project"
+                className="w-full h-full object-cover opacity-60 transition-transform duration-1000 group-hover:scale-105 group-hover:opacity-80"
+              />
+              <div className="absolute inset-0 bg-navy/40 mix-blend-multiply"></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+              <h3 className="text-white/20 text-9xl font-black uppercase rotate-90 origin-center whitespace-nowrap backdrop-blur-[2px]">
                 PILE STONE
               </h3>
             </div>
@@ -217,8 +233,17 @@ export default function Home() {
       </Section>
 
       {/* 07: CONTACT */}
-      <Section id={7} onVisible={setActiveSection} className="bg-yellow text-navy relative">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <Section id={7} onVisible={setActiveSection} className="bg-yellow text-navy relative overflow-hidden">
+        {/* Background Texture */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay">
+          <img
+            src="/pictures/abstract_structure.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <span className="text-navy/60 font-bold tracking-[0.2em] uppercase text-sm mb-6 block">07 / Contact</span>
           <h2 className="text-5xl md:text-7xl font-black uppercase mb-8 font-heading text-navy">
             Ready to <br /> Start?

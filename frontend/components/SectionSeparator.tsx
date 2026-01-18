@@ -19,14 +19,13 @@ export default function SectionSeparator({
 // NOTE: For better visuals, users often use specific SVGs. 
 // I will create a dedicated SVG separator component that looks sharper.
 
-export function DiagonalSeparator() {
+export function DiagonalSeparator({ className = "text-navy" }: { className?: string }) {
     return (
-        <div className="w-full overflow-hidden leading-[0]">
+        <div className={`w-full overflow-hidden leading-[0] ${className}`}>
             <svg
                 viewBox="0 0 1200 120"
                 preserveAspectRatio="none"
-                className="relative block w-full h-[60px]"
-                style={{ fill: "#0a192f" }} // Navy fill for transition
+                className="relative block w-full h-[60px] fill-current"
             >
                 <path d="M1200 120L0 16.48V0h1200v120z" />
             </svg>
